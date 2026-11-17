@@ -55,7 +55,7 @@
     --color-bg-secondary: var(--c-gray-light);
     --color-input-border-default: var(--c-gray-light);
     --color-input-border-valid: var(--c-blue);
-    --color-input-border-invalid: var(--c-red);
+    --color-input-border-invalidvalid: var(--c-red);
     --color-button-bg: var(--c-green);
   }
 
