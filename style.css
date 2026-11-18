@@ -36,11 +36,26 @@
 
   /* Fonts */
   :root {
+    --fs-48: calc(48 / 16 * 1rem);
+    --fs-18: calc(18 / 16 * 1rem);
+    --fs-16: calc(16 / 16 * 1rem);
+    --fs-14: calc(14 / 16 * 1rem);
+    --fs-12: calc(12 / 16 * 1rem);
+
+    --font-size-logo-text: var(--fs-48);
+    --font-size-h3: var(--fs-18);
+    --font-size-label: var(--fs-12);
+    --font-size-input: var(--fs-16);
+    --font-size-button: var(--fs-16);
+    --font-size-p-small: var(--fs-14);
+    --font-size-p-large: var(--fs-18);
+    --font-size-link: var(--fs-14);
   }
 
   /* Colors */
   :root {
     --c-black: hsl(0, 0%, 0%);
+    --c-black-semi-transparent: hsla(0, 0%, 0%, 0.5);
     --c-white: hsl(0, 0%, 100%);
     --c-gray-light: hsl(220, 13%, 91%);
     --c-gray-lighter: hsl(210, 20%, 98%);
@@ -73,5 +88,78 @@
     font-family: "Inter", Arial, Helvetica, sans-serif;
     line-height: 1.3;
     color: var(--color-text-dark);
+  }
+
+  h3 {
+    font-size: var(--font-size-h3);
+    line-height: 1.2;
+  }
+
+  p {
+    line-height: 1.1;
+  }
+
+  a {
+    color: var(--color-text-dark);
+    text-decoration: none;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+  }
+}
+
+@layer compenents {
+  .sign-up {
+    .sign-up__wrapper {
+    }
+
+    .sign-up__sidenav {
+      height: 30vh;
+      display: grid;
+      place-items: center;
+      background: url(./img/bg-img.jpg) center / cover;
+      color: var(--color-text-light);
+
+      .sign-up__logo {
+        width: 100%;
+        padding: 12px 0;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--c-black-semi-transparent);
+
+        .sign-up__logo-text {
+          font-family: "Norse", Arial, Helvetica, sans-serif;
+          font-size: var(--font-size-logo-text);
+        }
+      }
+    }
+
+    .sign-up__content-wrapper {
+      .sign-up__text {
+        p {
+          font-size: var(--font-size-p-large);
+          font-weight: 600;
+        }
+      }
+
+      .sign-up__inputs-wrapper {
+        .sign-up__form-heading {
+        }
+
+        .sign-up__inputs {
+          .sign-up__left-inputs {
+          }
+
+          .sign-up-right-inputs {
+          }
+        }
+      }
+    }
   }
 }
