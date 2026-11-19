@@ -4,13 +4,30 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ODIN Form - Project 1</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./script.js" defer></script>
+
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      type="image/png"
+      href="./favicon/favicon-96x96.png"
+      sizes="96x96"
+    />
+    <link rel="icon" type="image/svg+xml" href="/.favicon/favicon.svg" />
+    <link rel="shortcut icon" href="/.favicon/favicon.ico" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./favicon/apple-touch-icon.png"
+    />
+    <link rel="manifest" href="./favicon/site.webmanifest" />
   </head>
   <body>
     <main>
       <section class="sign-up">
         <div class="sign-up__wrapper">
-          <div class="sign-up__sidenav">
+          <aside class="sign-up__sidenav">
             <div class="sign-up__logo">
               <img
                 src="./img/odin-lined.png"
@@ -20,11 +37,31 @@
               />
               <span class="sign-up__logo-text">ODIN</span>
             </div>
-          </div>
+            <p class="sign-up__photo-credit">
+              Photo by
+              <a
+                href="https://unsplash.com/photos/green-leaf-plant-in-close-up-photography-25xggax4bSA"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Halie West</a
+              >
+              on
+              <a
+                href="https://unsplash.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Unsplash</a
+              >
+            </p>
+          </aside>
 
-          <form action="" method="">
+          <form
+            action="https://httpbin.org/post"
+            method="post"
+            class="sign-up__form"
+          >
             <div class="sign-up__content-wrapper">
-              <div class="sign-up__text">
+              <div class="sign-up__text responsive">
                 <p>
                   This is not real online service! You know you need something
                   like this in your life to help you realize your deepest
@@ -36,9 +73,9 @@
               </div>
 
               <div class="sign-up__inputs-wrapper">
-                <h3 class="sign-up__form-heading">Let's do this!</h3>
-                <div class="sign-up__inputs">
-                  <div class="sign-up__left-inputs">
+                <h3 class="sign-up__form-heading responsive">Let's do this!</h3>
+                <div class="sign-up__inputs responsive">
+                  <div class="sign-up__inputs-item">
                     <div class="sign-up__item">
                       <label for="first_name">FIRST NAME</label>
                       <input
@@ -50,23 +87,6 @@
                     </div>
 
                     <div class="sign-up__item">
-                      <label for="email">EMAIL</label>
-                      <input type="email" name="email" id="email" required />
-                    </div>
-
-                    <div class="sign-up__item">
-                      <label for="password">PASSWORD</label>
-                      <input
-                        type="password"
-                        name="password"
-                        id="password"
-                        required
-                      />
-                    </div>
-                  </div>
-
-                  <div class="sign-up__right-inputs">
-                    <div class="sign-up__item">
                       <label for="last__name">LAST NAME</label>
                       <input
                         type="text"
@@ -74,6 +94,13 @@
                         id="last__name"
                         required
                       />
+                    </div>
+                  </div>
+
+                  <div class="sign-up__inputs-item">
+                    <div class="sign-up__item">
+                      <label for="email">EMAIL</label>
+                      <input type="email" name="email" id="email" required />
                     </div>
 
                     <div class="sign-up__item">
@@ -85,6 +112,19 @@
                         required
                       />
                     </div>
+                  </div>
+
+                  <div class="sign-up__inputs-item">
+                    <div class="sign-up__item">
+                      <label for="password">PASSWORD</label>
+                      <input
+                        type="password"
+                        name="password"
+                        id="password"
+                        minlength="15"
+                        required
+                      />
+                    </div>
 
                     <div class="sign-up__item">
                       <label for="confirm_password">CONFIRM PASSWORD</label>
@@ -92,6 +132,7 @@
                         type="password"
                         name="confirm_password"
                         id="confirm_password"
+                        minlength="15"
                         required
                       />
                     </div>
@@ -99,7 +140,7 @@
                 </div>
               </div>
 
-              <div class="sign-up__button-wrapper">
+              <div class="sign-up__button-wrapper responsive">
                 <button type="submit" class="sign-up__button">
                   Create Account
                 </button>
