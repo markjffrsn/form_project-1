@@ -139,6 +139,10 @@
     width: min(calc(100% - 48px), calc(668 / 16 * 1rem));
     margin-inline: auto;
   }
+
+  .required {
+    color: var(--c-red);
+  }
 }
 
 @layer compenents {

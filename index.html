@@ -77,7 +77,9 @@
                 <div class="sign-up__inputs responsive">
                   <div class="sign-up__inputs-item">
                     <div class="sign-up__item">
-                      <label for="first_name">FIRST NAME</label>
+                      <label for="first_name"
+                        >FIRST NAME<span class="required">*</span>
+                      </label>
                       <input
                         type="text"
                         name="first_name"
@@ -88,23 +90,22 @@
 
                     <div class="sign-up__item">
                       <label for="last__name">LAST NAME</label>
-                      <input
-                        type="text"
-                        name="last__name"
-                        id="last__name"
-                        required
-                      />
+                      <input type="text" name="last__name" id="last__name" />
                     </div>
                   </div>
 
                   <div class="sign-up__inputs-item">
                     <div class="sign-up__item">
-                      <label for="email">EMAIL</label>
+                      <label for="email"
+                        >EMAIL<span class="required">*</span></label
+                      >
                       <input type="email" name="email" id="email" required />
                     </div>
 
                     <div class="sign-up__item">
-                      <label for="phone_number">PHONE NUMBER</label>
+                      <label for="phone_number"
+                        >PHONE NUMBER<span class="required">*</span></label
+                      >
                       <input
                         type="tel"
                         name="phone_number"
@@ -116,7 +117,9 @@
 
                   <div class="sign-up__inputs-item">
                     <div class="sign-up__item">
-                      <label for="password">PASSWORD</label>
+                      <label for="password"
+                        >PASSWORD<span class="required">*</span></label
+                      >
                       <input
                         type="password"
                         name="password"
@@ -127,7 +130,9 @@
                     </div>
 
                     <div class="sign-up__item">
-                      <label for="confirm_password">CONFIRM PASSWORD</label>
+                      <label for="confirm_password"
+                        >CONFIRM PASSWORD<span class="required">*</span></label
+                      >
                       <input
                         type="password"
                         name="confirm_password"
@@ -146,7 +151,12 @@
                 </button>
                 <p class="sign-up__account-prompt">
                   Already have an account?
-                  <a href="#!" class="sign-up__login">Log in</a>
+                  <a
+                    href="https://hackertyper.net/#"
+                    class="sign-up__login"
+                    target="_blank"
+                    >Log in</a
+                  >
                 </p>
               </div>
             </div>
