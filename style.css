@@ -160,7 +160,7 @@
       position: relative;
       display: grid;
       place-items: center;
-      background: url(./img/bg-img.jpg) center / cover;
+      background: url(./img/bg-img.webp) center / cover;
       color: var(--color-text-light);
 
       @media (width >= calc(900 / 16 * 1rem)) {
